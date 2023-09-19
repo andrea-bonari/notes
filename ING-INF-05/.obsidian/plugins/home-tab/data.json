@@ -1,0 +1,53 @@
+{
+  "logoType": "lucideIcon",
+  "logo": {
+    "lucideIcon": "laptop",
+    "imagePath": "",
+    "imageLink": "https://e7.pngegg.com/pngimages/622/226/png-clipart-function-plot-mathematics-computer-icons-nuvola-mathematics-text-logo.png"
+  },
+  "logoScale": 1.2,
+  "iconColorType": "default",
+  "wordmark": "FONDAMENTI DI INFORMATICA",
+  "customFont": "interfaceFont",
+  "fontSize": "4em",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 5,
+  "showStarredFiles": false,
+  "showRecentFiles": true,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": true,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "Il sistema operativo.md",
+      "timestamp": 1695153714653
+    },
+    {
+      "filepath": "Informazione e codice binario.md",
+      "timestamp": 1695153703894
+    },
+    {
+      "filepath": "Modello Von Neumann.md",
+      "timestamp": 1695121419653
+    },
+    {
+      "filepath": "Data/Recording 20230919130324.webm",
+      "timestamp": 1695121410908
+    },
+    {
+      "filepath": "Data/01.architettura_hardware.pdf",
+      "timestamp": 1695116627635
+    }
+  ],
+  "starredFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": true,
+  "closePreviousSessionTabs": true,
+  "omnisearch": false
+}

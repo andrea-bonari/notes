@@ -1,0 +1,41 @@
+{
+  "logoType": "lucideIcon",
+  "logo": {
+    "lucideIcon": "function-square",
+    "imagePath": "",
+    "imageLink": "https://e7.pngegg.com/pngimages/622/226/png-clipart-function-plot-mathematics-computer-icons-nuvola-mathematics-text-logo.png"
+  },
+  "logoScale": 1.2,
+  "iconColorType": "default",
+  "wordmark": "GEOMETRIA ED ALGEBRA LINEARE",
+  "customFont": "interfaceFont",
+  "fontSize": "4em",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 5,
+  "showStarredFiles": false,
+  "showRecentFiles": true,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": false,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "Matrici.md",
+      "timestamp": 1695150842043
+    },
+    {
+      "filepath": "Vettori.md",
+      "timestamp": 1695122857910
+    }
+  ],
+  "starredFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": true,
+  "closePreviousSessionTabs": true,
+  "omnisearch": false
+}
