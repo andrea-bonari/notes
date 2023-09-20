@@ -25,11 +25,23 @@
   "recentFilesStore": [
     {
       "filepath": "Matrici.md",
-      "timestamp": 1695150842043
+      "timestamp": 1695238420536
+    },
+    {
+      "filepath": "Sistemi lineari.md",
+      "timestamp": 1695238420031
     },
     {
       "filepath": "Vettori.md",
-      "timestamp": 1695122857910
+      "timestamp": 1695238418755
+    },
+    {
+      "filepath": "Data/prodotto-tra-matrici.png",
+      "timestamp": 1695237319017
+    },
+    {
+      "filepath": "Data/Immagine.png",
+      "timestamp": 1695237317655
     }
   ],
   "starredFileStore": [],

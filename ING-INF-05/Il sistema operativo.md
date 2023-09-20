@@ -26,6 +26,25 @@ Il cambio di processo fisico ha un costo di tempo non piccolo, perché va salvat
 Per gestire il tutto il kernel dispone di una tabella che lista tutti i processi e i loro dettagli. Inoltre il kernel si dovrà preoccupare di gestire la comunicazione tra più processi.
 #### Gestore della memoria di lavoro
 
-Il gestore fornisce un meccanismo tramite il quale il processo accede alla memoria tramite un indirizzo. Ogni processo ha un area di memoria logicamente accessibile e protetta da altri processi. Per quanto riguarda l'estensione mette a disposizione una memoria virtuale.
+Il gestore fornisce un meccanismo tramite il quale il processo accede alla memoria tramite un indirizzo. Ogni processo ha un area di memoria logicamente accessibile (non sa dove è posizionata ma ci può accedere) e protetta da altri processi. Per quanto riguarda l'estensione mette a disposizione una memoria virtuale.
 
--- To continue
+Il gestore della memoria ha un modulo hardware Memory Manager Unit che mappa una parte della memoria di lavoro a una parte logica (tutti i rif. del programma partono da 0).
+
+Quando il programma viene reso eseguibile, tutti i dati in memoria di lavoro partiranno da 0.
+
+La memoria è divisa in pagine e quando viene creato un processo gli viene assegnato una pagina. Questo purtroppo ci fa sprecare della memoria.
+
+Un altra strategia, detta segmentazione, dove si hanno dei segmenti dimensione diversa, in base a quanto ha bisogno un processo. Purtroppo anche questo costituisce uno spreco di memoria quando un processo viene terminato, e va riempito il buco di memoria lasciato vuoto.
+
+Entrambe le soluzioni causano frammentazione della memoria.
+Dato che la memoria è virtualizzata, ogni processo ha tanta memoria quanta gliene serve. Per questo quando la memoria in RAM è esaurita, la memoria di un processo `wait` sarà spostata nella memoria di massa, e sarà assegnata al processo originale quello spazio vuoto. Questo processo si chiama Swapping. Ci sono delle politiche come: swappare processi che hanno avuto da poco un accesso alla memoria perchè meno probabile che la usino o swappare processi che non hanno accessi alla memoria da tanto perchè meno probabile che la usino.
+
+#### Gestore delle periferiche
+
+Semplifica la lettura, la scrittura e lo scambio di informazioni delle periferiche, e estende le risorse anche se non sono parte del sistema. Pensare ai driver del SO.
+
+Il driver è il programma che definisce come utilizzare e mette a disposizione le primitive di una periferica fisica.
+
+Lo stesso driver, nel momento in cui la risorsa potrebbe essere condivisa, ha dei meccanismi per cui è possibile condividere un dispositivo, creando ad esempio delle code di accesso.
+
+<!-- TODO: Da continuare, minuto 1:00:00 -->

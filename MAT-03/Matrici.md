@@ -174,15 +174,56 @@ $$det(A)=\sum_{j=1}^na_{ij}\cdot A_{ij}$$
 
 Di seguito alcune proprietà del determinante:
 
-| Nome proprietà   | Formula                |
-| ---------------- | ---------------------- |
-| Normalizzazione  | $det(I)=1$             |
-| Simmetria        | $det(A)=det(A^T)$      |
-| Formula di Binet | $det(AB)=det(A)det(B)$ |
+| Nome proprietà   | Formula                                                                                                                                                                                                                                         |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Normalizzazione  | $det(I)=1$                                                                                                                                                                                                                                      |
+| Simmetria        | $det(A)=det(A^T)$                                                                                                                                                                                                                               |
+| Formula di Binet | $det(AB)=det(A)det(B)$                                                                                                                                                                                                                          |
+| Alternanza       | Se $A'$ è $A$ scambiando 2 righe allora $det(A')=det(A)$                                                                                                                                                                                        |
+| Multilinearità   | Se $A'$ è $A$ moltiplicando una riga per uno scalare $t$ allora $det(A')=t\cdot det(A)$                                                                                                                                                         |
+| Somma di vettori | Se la i-esima riga di $A$ è la somma di due vettori $v$ e $w$ allora $det(A)=det(A')+det(A'')$, dove $A'$ è la matrice ottenuta da $A$ sostituendo $v$ alla i-esima riga e $A''$ è la matrice ottenuta da $A$ sostituendo $w$ alla i-esima riga |
+
+>[!example]
+>Somma di vettori
+>$det\begin{pmatrix}
+1 & 0 & 1 \\
+1 & 2 & 1 \\
+0 & 1 & 2
+\end{pmatrix}=det\begin{pmatrix}
+1 & 0 & 1 \\
+1 & 0 & 1 \\
+0 & 1 & 2
+\end{pmatrix}+det\begin{pmatrix}
+1 & 0 & 1 \\
+0 & 2 & 0 \\
+0 & 1 & 2
+>\end{pmatrix}$
+>
+>$4=0+4$
 
 Da queste proprietà posso derivare certe conseguenze, tra cui:
 
 - Se $A$ è invertibile, e quindi $det(A)\neq 0$, allora: $det(A^{-1})=\frac{1}{det(A)}$
+- Se una matrice $A$ ha due righe uguali allora $det(A)=0$
+- Siccome $det(A)=det(A^{T)}$ allora lo [[#Sviluppo di Laplace|sviluppo di Laplace]] si può fare lungo le colonne con la formula: $$det(A)=\sum_{i=0}^{n} a_{ij}A_{ij}$$
+>[!example]
+>Sviluppo in colonna
+>
+>$det\begin{pmatrix}
+1 & 2 & -1 & 1 \\
+2 & 1 & 1 & 0 \\
+1 & 1 & 1 & 1 \\
+0 & 2 & 1 & 0
+>\end{pmatrix}=det-\begin{pmatrix}
+2 & 1 & 1 \\
+1 & 1 & 1 \\
+0 & 2 & 1
+>\end{pmatrix}+det-\begin{pmatrix}
+1 & 2 & -1 \\
+2 & 1 & 1 \\
+0 & 2 & 1
+>\end{pmatrix}=1+9=10$
+  
 #### Aggiunto classico di una matrice
 
 > Data una matrice quadrata $A$, sia $C$ la matrice tale che $c_{ij}=A_{ij}$. Possiamo dire che $agg(A)=C^T$.
@@ -407,3 +448,4 @@ A_1 & 0 \\
 >>$A_2^{-1}=\begin{pmatrix}-\frac{1}{2} & \frac{1}{2} \\1 & 0\end{pmatrix}$
 >>
 >>$A^{-1}=\begin{pmatrix}0 & 1 & 0 & 0 & 0 \\1 & -1 & 0 & 0 & 0 \\0 & 0 & \frac{1}{4} & 0 & 0 \\0 & 0 & 0 & -\frac{1}{2} & \frac{1}{2} \\0 & 0 & 0 & 1 & 0\end{pmatrix}$
+

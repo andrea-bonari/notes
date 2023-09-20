@@ -8,27 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6ab3937cf92bf74",
-            "type": "leaf",
-            "state": {
-              "type": "home-tab-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "10978d5bdb13773d",
+            "id": "85d288dc4c5db30d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Limiti di successioni.md",
+                "file": "Modulo.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Limiti di successioni.md",
+                "file": "Modulo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Limiti di successioni.md",
+                "file": "Modulo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Limiti di successioni.md"
+                "file": "Modulo.md"
               }
             }
           }
@@ -157,10 +148,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "10978d5bdb13773d",
+  "active": "85d288dc4c5db30d",
   "lastOpenFiles": [
-    "Modulo.md",
     "Limiti di successioni.md",
+    "Modulo.md",
     "Successioni di numeri razionali.md",
     "Intervallo di numeri razionali.md",
     "Distanza euclidea.md",

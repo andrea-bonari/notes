@@ -23,3 +23,4 @@ Il modulo è utilizzato per calcolare la [[Distanza euclidea|distanza euclidea]]
 - $|q_1+q_2|\leq|q_1|+|q_2|$ -> $|q_1-q_2|\leq|q_1-q_3|+|q_3-q_2|$ (Disuguaglianza triangolare)
 - $|-q|=|q|$
 - $-q < x < q \Leftrightarrow |x| < q$
+
