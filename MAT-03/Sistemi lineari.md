@@ -133,3 +133,232 @@ Le operazioni elementari sulle righe sono:
 
 La notazione per esprimere una operazione elementare si esprime in tale modo:
 $$A\stackrel{operazione}{\sim} B$$
+Questo è detto metodo di eliminazione di Gauss-Jordan, e riduce la matrice del sistema a una forma particolare detta a gradini.
+
+### Matrice a gradini
+
+> È una matrice particolare dove il primo elemento non nullo di una riga, detto pivot, in una colonna successiva rispetto a quello delle righe precedenti tutte le righe. Quindi se una riga è nulla tutte le righe devono essere nulle.
+
+>[!example]
+>Un esempio di matrici a gradini:
+>$\begin{pmatrix}
+1 & 0 & 2 & -1 \\
+0 & 0 & 1 & 1 \\
+0 & 0 & 0 & -1
+>\end{pmatrix}\qquad\begin{pmatrix}
+0 & -2 & 0 \\
+0 & 0 & 1 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+>\end{pmatrix}\qquad\begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+>\end{pmatrix}$
+>
+>Un esempio di matrici non a gradini:
+>$\begin{pmatrix}
+1 & 0 & 2 & 1 \\
+1 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1
+>\end{pmatrix}\qquad\begin{pmatrix}
+0 & 2 & 1 \\
+0 & 0 & 1 \\
+0 & 0 & -1 \\
+0 & 0 & 0
+>\end{pmatrix}\qquad\begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}$
+
+>[!tip]- Esercizio svolto
+>Riduciamo a gradini
+>$$\begin{pmatrix}
+1 & 1 & 2 & 2 \\
+2 & 0 & 4 & 2 \\
+1 & -1 & 2 & 0 \\
+0 & 2 & 0 & 2
+\end{pmatrix}\quad\text{e}\quad\begin{pmatrix}
+0 & 2 & 1 & 0 & 1 \\
+0 & 3 & -1 & 1 & 1 \\
+1 & 1 & -2 & 1 & 0 \\
+1 & -1 & -3 & 1 & -1
+>\end{pmatrix}$$
+>>[!todo]- Soluzione
+>>1: 
+>>$\begin{pmatrix}
+1 & 1 & 2 & 2 \\
+2 & 0 & 4 & 2 \\
+1 & -1 & 2 & 0 \\
+0 & 2 & 0 & 2
+\end{pmatrix} \sim\begin{pmatrix}
+1 & 1 & 2 & 2 \\
+0 & -2 & 0 & -2 \\
+0 & -2 & 0 & -2 \\
+0 & 2 & 0 & 2
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & 2 & 2 \\
+0 & -2 & 0 & -2 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+>>\end{pmatrix}$
+>>
+>>$\begin{cases}x+y+2w=2\\-2y=-2\end{cases}=\begin{cases}x=1-2w\\y=1\end{cases}$
+>>
+>>$x$, $y$ vincolate, $z$ libera
+>>
+>>$\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}1\\1\end{pmatrix}+w\begin{pmatrix}-2\\0\end{pmatrix}$
+>>
+>>2: $\begin{pmatrix}
+0 & 2 & 1 & 0 & 1 \\
+0 & 3 & -1 & 1 & 1 \\
+1 & 1 & -2 & 1 & 0 \\
+1 & -1 & -3 & 1 & -1
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & -2 & 1 & 0 \\
+0 & 3 & -1 & 1 & 1 \\
+0 & 2 & 1 & 0 & 1 \\
+1 & -1 & -3 & 1 & -1
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & -2 & 1 & 0 \\
+0 & 3 & -1 & 1 & 1 \\
+0 & 2 & 1 & 0 & 1 \\
+0 & -2 & -1 & 0 & -1
+>>\end{pmatrix}$
+>>$\begin{pmatrix}
+1 & 1 & -2 & 1 & 0 \\
+0 & 3 & -1 & 1 & 1 \\
+0 & 0 & 5 & -2 & 1 \\
+0 & 0 & -5 & 2 & -1
+>>\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & -2 & 1 & 0 \\
+0 & 3 & -1 & 1 & 1 \\
+0 & 0 & 5 & -2 & 1 \\
+0 & 0 & 0 & 0 & 0
+>>\end{pmatrix}$
+>>
+>>$$\begin{cases}
+>>2y+z=1 \\
+>>3y-z+w=1\\
+>>x+y-2z+w=0\\
+>>x-y-3z+w=1\end{cases}=\begin{cases}x+y-2z+w=0\\3y-z+w=1\\5z-2w=0\end{cases}=\begin{cases}x=0\\y= \frac{1}{3}(1+z-w)= \frac{2}{5} - \frac{1}{5}w \\ z= \frac{1+2w}{5}=\frac{1}{5}-\frac{2}{5}w\end{cases}$$
+>>
+>>Soluzioni:
+>>
+>>$$\begin{pmatrix}x\\y\\z\\w\end{pmatrix}=\begin{pmatrix}0\\ \frac{2}{5}- \frac{1}{5}w\\ \frac{1}{5}+ \frac{2}{5}w\\w\end{pmatrix}=\begin{pmatrix}0\\ \frac{2}{5}\\ \frac{1}{5}\\ 0\end{pmatrix}+\begin{pmatrix}0\\ - \frac{1}{5}\\ \frac{2}{5}\\1\end{pmatrix}w$$
+
+Un sistema è detto a gradini se la sua matrice completa lo è, e ogni sistema è equivalente a un sistema a gradini.
+Le variabili che corrispondono ai pivot sono dette vincolate, mentre le altre sono dette libere.
+
+Se l'ultimo pivot è posizionato nell'ultima colonna il sistema non ha soluzione.
+
+>[!tip]- Esercizio svolto
+>Risolvere i sistemi
+>
+>$$\begin{cases}x+y-z=1\\x-y+z=1\\-x+y+z=1\end{cases}\qquad\begin{cases}x+y+z=1\\x-y+z=1\\x+y=1\end{cases}\qquad\begin{cases}x+y+z=1\\x-y+z=1\\x+z=0\end{cases}$$
+>
+>>[!todo]- Soluzione
+>>
+>>1:
+>>
+>>$\begin{pmatrix}
+1 & 1 & -1 & 1 \\
+1 & -1 & 1 & 1 \\
+-1 & 1 & 1 & 1
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & -1 & 1 \\
+0 & -2 & 2 & 0 \\
+0 & 2 & 0 & 2
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & -1 & 1 \\
+0 & -2 & 2 & 0 \\
+0 & 0 & 2 & 2
+>>\end{pmatrix}$
+>>
+>>$\begin{cases}x+y-z=1\\-2y+2z=0\\2z=2\end{cases}=\begin{cases}x=1-y+z=1\\y=z=1\\z=1\end{cases}$
+>>
+>>$x$, $y$, $z$ vincolate
+>>
+>>Soluzioni:
+>>
+>>$$\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}1\\1\\1\end{pmatrix}$$
+>>
+>>2:
+>>
+>>$\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+1 & -1 & 1 & 1 \\
+1 & 0 & 1 & 1
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+0 & -2 & 0 & 0 \\
+0 & 1 & 0 & 0
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+0 & -2 & 0 & 0 \\
+0 & 0 & 0 & 0
+>>\end{pmatrix}$
+>>
+>>$x$, $y$ vincolate mentre $z$ libera
+>>
+>>$\begin{cases}x+y+z=1\\-2y=0\end{cases}=\begin{cases}x=1-z\\y=0\end{cases}$
+>>
+>>Soluzioni:
+>>
+>>$$\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}1-z\\0\\z\end{pmatrix}=\begin{pmatrix}1\\0\\0\end{pmatrix}+z\begin{pmatrix}-1\\0\\1\end{pmatrix}$$
+>>
+>>3:
+>>
+>>$\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+1 & -1 & 1 & 1 \\
+1 & 0 & 1 & 0
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+0 & -2 & 0 & 0 \\
+0 & -1 & 0 & -1
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 1 & 1 & 1 \\
+0 & -2 & 0 & 0 \\
+0 & 0 & 0 & -2
+>>\end{pmatrix}$
+>>
+>>$\begin{cases}x+y+z=1\\-2y=0\\0=-2\end{cases}\qquad \text{nessuna soluzione}$
+
+Se scambiamo due righe il determinante cambia di segno, mentre se applichiamo la terza operazione elementare di una riga ad una matrice allora il suo determinante non cambia. Sapendo questo possiamo usare la riduzione a gradini per calcolare il determinante.
+
+>[!tip]- Esercizio svolto
+>Calcolare $$det\begin{pmatrix}
+1 & 2 & -1 & 1 \\
+2 & 0 & 1 & 0 \\
+1 & 1 & 1 & 1 \\
+0 & 2 & 1 & 0
+>\end{pmatrix}$$
+>
+>>[!todo]- Soluzione
+>>
+>>$\begin{pmatrix}
+1 & 2 & -1 & 1 \\
+0 & -4 & 3 & -2 \\
+0 & -1 & 2 & 0 \\
+0 & 2 & 1 & 0
+>>\end{pmatrix}\sim\begin{pmatrix}
+1 & 2 & -1 & 1 \\
+0 & -4 & 3 & -2 \\
+0 & 0 & \frac{5}{4} & \frac{1}{2} \\
+0 & 2 & 1 & 0
+\end{pmatrix}\sim\begin{pmatrix}
+1 & 2 & -1 & 1 \\
+0 & -4 & 3 & -2 \\
+0 & 0 & \frac{5}{4} & \frac{1}{2} \\
+0 & 0 & 0 & -2
+\end{pmatrix}$
+>>
+>>$det\begin{pmatrix}
+1 & 2 & -1 & 1 \\
+0 & -4 & 3 & -2 \\
+0 & 0 & \frac{5}{4} & \frac{1}{2} \\
+0 & 0 & 0 & -2
+\end{pmatrix}=1\cdot(-4)\cdot\frac{5}{4}\cdot(-2)=10$
+

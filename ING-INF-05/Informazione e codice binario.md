@@ -59,11 +59,11 @@ I suoi multipli sono:
 > - è bene considerare di mantenere un legame logico dove possibile (es: elementi adiacenti)
 > - Il significato di un informazione non definisce la sua rappresentazione, ciò dipende dalla codifica adottata
 
-## Codifiche
+# Codifiche
 
-#### Codifica dei caratteri
+## Codifica dei caratteri
 
-###### ASCII
+### ASCII
 
 nello standard ASCII base si intende rappresentare i seguenti caratteri:
 - alfabeto base: $\{a .. z,A .. Z\}$
@@ -83,13 +83,13 @@ quindi il numero di combinazioni diventa 256.
 >[!info]
 >Ogni carattere corrisponde a un byte, e quindi anche a un valore numerico
 
-##### UNICODE
+### UNICODE
 
 >UNICODE è uno standard compatibile con il codice ASCII che utilizza 16 bit per rappresentare i caratteri, rappresentando però $65536$, tuttavia proprio per questo motivo le dimensioni dei file risultano raddoppiate.
 
-#### Codifica dei numeri
+## Codifica dei numeri
 
-##### Numeri naturali
+### Numeri naturali
 
 Un numero naturale è un valore che può essere rappresentato come una sequenza di simboli. Il quantitativo di simboli indica la base.
 
@@ -153,7 +153,8 @@ Per rappresentare un valore numerico naturale in basi diverse dobbiamo saperli c
 
 La base esadecimale è generalmente più utilizzata per la sua compattezza nella rappresentazione dei dati. Si può utilizzare nelle seguenti notazioni:
 $$57AB_{16}\quad57AB_H\quad0\text{x}57AB$$
-##### Numeri interi
+### Numeri interi
+##### Notazione Modulo Segno
 
 Per rappresentare i numeri interi in qualsiasi base utilizziamo la notazione segno modulo.
 
@@ -170,6 +171,101 @@ $$-5_{10}=\underbracket{1}_\text{segno}101_{2MS}$$
 Per quanto riguarda l'aritmetica con queste rappresentazioni in caso di segni discordi il calcolatore controlla prima un controllo sul modulo maggiore, e poi utilizza il segno dell'operando maggiore.
 
 >[!bug]
->In caso il risultato dell'operazione è fuori dall'intervallo dei valori rappresentabili il segno viene cambiato, dato che l'operazione viene eseguita come una somma binaria normale. Questo fenomeno è detto overflow/underflow.
+>In caso il risultato dell'operazione è fuori dall'intervallo dei valori rappresentabili il segno viene cambiato, dato che l'operazione viene eseguita come una somma binaria normale. In questo caso il processore emette nel suo registro dello stato un codice di overflow. Questo fenomeno è detto overflow/underflow.
+>Per evitare questo fenomeno si possono aggiungere degli $0$ di padding per aumentare il numero di cifre senza cambiare il valore, questa operazione si dice estensione del segno.
+>
+>>[!example]
+>>![[13.moduloesegno.pdf#page=50]]
 
-![[Recording 20230919130324.webm]]
+##### Notazione in complemento alla base
+
+> si vuole trovare un modo tale per cui sommando due operandi qualsiasi risultato sia quello ci si aspetta.
+> Sapendo che $$x+(-x)=0$$
+
+Per farlo nel caso un numero $n$ sia un valore positivo teniamo il numero uguale ma non trattiamo il primo bit come segno.
+
+In caso $n$ sia un numero negativo utilizziamo la precedente equazione, ignorando il riporto in overflow e troviamo $-x$, che è detto codifica ideale.
+
+>Quindi la notazione in complemento alla base afferma che la codifica del valore opposto è la quantità che sommata al valore stesso dà la base elevata a una potenza
+
+>[!example]- Esercizio svolto
+>Calcola il valore opposto di $0100_{2C2}$
+>
+>>[!todo]- Soluzione
+>>Il valore è $1100_{2C2}$
+
+>[!tip]
+>Quando si svolgono operazioni con segno discorde nella notazione in complemento alla base non si possono verificare overflow/underflow. Essi si verificano solo quando il segno è concorde negli operandi ma è discorde quello del risultato.
+### Numeri irrazionali
+
+È impossibile rappresentare con precisione un numero reale, possiamo rappresentare soltanto un valore simile utilizzando i numeri razionali.
+
+Possiamo valutare la precisione della rappresentazione $V_\text{rappr}$ rispetto al valore reale $V_\text{reale}$ tramite l'utilizzo di:
+- Errore assoluto ($e_A$): $$V_\text{rappr}-V_\text{reale}$$
+- Errore relativo ($e_R$): $$\frac{e_A}{V_\text{vero}}$$
+L'errore relativo è ciò che ci da un idea del peso dell'errore.
+##### Notazione a virgola fissa
+
+è stabilito a priori il numero di cifre destinate alla parte intera e alla parte fissa.
+La parte intera è data dal numero di valori interi rappresentabili, mentre la parte frazionaria è data dalla precisione che si vuole ottenere nella rappresentazione.
+
+>[!example]
+>Se la parte frazionaria è costituita da una sola cifra $k=1$ allora possiamo rappresentare un univo valore razionale tra due numeri interi.
+>![[rM drawing 2023-09-21-16.17.06.png]]
+
+La distanza tra valori è data da $\frac{1}{k^2}$, dove $k$ è il numero di bit dati alla parte frazionaria.
+
+
+In questa notazione l'errore assoluto $e_A$ è costante, mentre l'errore relativo $e_R$ decresce al crescere che si vuole rappresentare.
+
+Per convertire in base $n$ si usa la seguente formula:$$\sum\limits_{i=-k}^{n-1}c_{1}\cdot b^i$$ dove:
+$k$ è il numero di bit dati alla parte frazionaria
+$n$ è il numero di bit totali
+$c_i$ è il valore in posizione $i$
+$b$ è la base in cui convertire
+
+>[!example]- Esercizio svolto
+>Convertire $1101.101000_2$ in base 10:
+>
+>>[!todo]- Soluzione
+>>$1101.101000_2=\sum\limits_{i=-k}^{n-1}c_{1}\cdot b^i=2^3+2^2+2^0+2^{-1}+2^{-3}=13.625$
+
+Per convertire in base 2 un numero in base $n$, convertiamo la parte intera in binaria come di norma, e per quanto riguarda la parte decimale moltiplico la parte decimale per $n$, se raggiungo l'unità segno $1$, altrimenti $0$, e a questo punto moltiplico di nuovo la parte decimale per $n$ per il numero di cifre che vogliamo avere in parte decimale. La sequenza di $0$ e $1$ trovata sarà la parte decimale.
+
+>[!tip]
+>Se trovo il numero zero nelle moltiplicazioni ripetute posso assumere che tutte le moltiplicazioni successive saranno $0$
+
+>[!example]- Esercizio svolto
+>Convertire $156.45_{10}$ in base 2 utilizzando 12 cifre per la parte frazionaria:
+>
+>>[!todo]- Soluzione
+>>Calcoliamo la parte intera
+>>$156=\underbracket{10011100}_\text{parte intera}$
+>>
+>>Calcoliamo la parte frazionaria
+>>$\begin{matrix}0.45&2&\\0.9&&0\\1.8&&1\\1.6&&1\\1.2&&1\\0.4&&0\\0.8&&0\\1.6&&1\\1.2&&1\\0.4&&0\\0.8&&0\\1.6&&0\\1.2&&1\end{matrix}$
+>>
+>>$.45_{10}=011100110011$
+>>
+>>quindi $56.45_{10}=10011100.011100110011$
+##### Notazione a virgola mobile
+
+La notazione a virgola mobile ci permettere di creare un compromesso tra la dimensione dei valori e la loro precisione permettendo di spostare la virgola. Per ottenere questo effetto si utilizza la notazione scientifica:$$\text{valore}=\text{segno}\cdot\text{mantissa}\cdot\text{base}^\text{esponente}$$
+Si stabilisce quante cifre dare alla mantissa, al segno e all'esponente.
+
+In questa notazione l'errore relativo $e_R$ è costante mentre l'errore assoluto $e_A$ cresce al crescere del valore che si vuole rappresentare.
+
+Questa notazione è detta in forma normalizzata quando la mantissa è: $1\leq\text{mantissa}<\text{base}$
+
+Secondo lo standard IEEE 754 esiste la rappresentazione a virgola mobile a singola precisione (float) e a doppia precisione (double).
+
+- float:
+	- $s$: 1 bit
+	- $esp+e$: 8 bit
+	- $M$: 23 bit
+- double
+	- $s$: 1bit
+	- $esp+e$: 11 bit
+	- $M$: 52 bit
+
+Per fare operazioni con virgola mobile 

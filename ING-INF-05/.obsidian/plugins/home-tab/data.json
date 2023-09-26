@@ -24,24 +24,24 @@
   "unresolvedLinks": false,
   "recentFilesStore": [
     {
-      "filepath": "Il sistema operativo.md",
-      "timestamp": 1695184980629
-    },
-    {
       "filepath": "Informazione e codice binario.md",
-      "timestamp": 1695153703894
+      "timestamp": 1695671514219
     },
     {
       "filepath": "Modello Von Neumann.md",
-      "timestamp": 1695121419653
+      "timestamp": 1695671512254
     },
     {
-      "filepath": "Data/Recording 20230919130324.webm",
-      "timestamp": 1695121410908
+      "filepath": "Esercitazioni/21-09-2023.md",
+      "timestamp": 1695671450307
     },
     {
-      "filepath": "Data/01.architettura_hardware.pdf",
-      "timestamp": 1695116627635
+      "filepath": "Algoritmi.md",
+      "timestamp": 1695671447685
+    },
+    {
+      "filepath": "Il sistema operativo.md",
+      "timestamp": 1695671445864
     }
   ],
   "starredFileStore": [],

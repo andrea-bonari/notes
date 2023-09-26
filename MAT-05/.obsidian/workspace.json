@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "900f250e1855415e",
+        "id": "221583d1ee09922c",
         "type": "tabs",
         "children": [
           {
-            "id": "85d288dc4c5db30d",
+            "id": "31efa6b1a0257f1d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Modulo.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "home-tab-view",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modulo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modulo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Modulo.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -144,12 +136,23 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "audio-recorder:Start/stop recording": false
+      "audio-recorder:Start/stop recording": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "85d288dc4c5db30d",
+  "active": "31efa6b1a0257f1d",
   "lastOpenFiles": [
+    "Esercitazioni/Esercitazione 21-09-23.md",
+    "Data/rM drawing 2023-09-21-10.11.36.png",
+    "Data/rM drawing 2023-09-21-10.09.09.png",
+    "Data/rM drawing 2023-09-21-09.47.28.png",
+    "Data/rM drawing 2023-09-21-09.15.54.png",
+    "Data/rM drawing 2023-09-21-09.06.29.png",
+    "Data/rM drawing 2023-09-21-09.02.03.png",
+    "Data/rM drawing 2023-09-21-08.39.45.png",
+    "Data/rM drawing 2023-09-21-08.24.04.png",
+    "Data/rM drawing 2023-09-21-08.24.49.png",
+    "Data/rM drawing 2023-09-21-08.22.28.png",
     "Limiti di successioni.md",
     "Modulo.md",
     "Successioni di numeri razionali.md",

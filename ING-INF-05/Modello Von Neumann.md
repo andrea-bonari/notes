@@ -122,4 +122,4 @@ In queste memorie solitamente troviamo dati e programmi non in esecuzione (file 
 
 ## Periferiche I/O
 
-In base alla periferica sono previste diverse tipologie di interazione.
+In base alla periferica sono previste diverse tipologie di interazione, che sono decise dal [[Il sistema operativo#Gestore delle periferiche|sistema operativo]].

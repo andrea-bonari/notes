@@ -13,7 +13,7 @@
 >[!example]
 >$(x_1, y_1 + ...) + (x_2, y_2 + ...) = (x_1+x_2, y_1+y_2 + ...)$
 
-#### Prodotto di uno scalare
+#### Prodotto per uno scalare
 
 
 > si esegue prodotto di un n-vettore di uno scalare $t$ moltiplicando i componenti del n-vettore per $t$
@@ -37,3 +37,4 @@
 | Proprietà distributiva      | $t(V + W) = tV + tW$         |
 | Proprietà associativa mista | $(TS)V=T(SV)$                |
 | Legge di unità              | $1V = V$                     |
+

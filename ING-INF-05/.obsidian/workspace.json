@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "0d31d5baea90a729",
+        "id": "bd0647a044ef4380",
         "type": "tabs",
         "children": [
           {
-            "id": "417b040e945ad412",
+            "id": "888dc30e51f7dcc2",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Informazione e codice binario.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Il sistema operativo.md",
+                "file": "Informazione e codice binario.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Il sistema operativo.md",
+                "file": "Informazione e codice binario.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Il sistema operativo.md"
+                "file": "Informazione e codice binario.md"
               }
             }
           }
@@ -144,17 +148,33 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "417b040e945ad412",
+  "active": "888dc30e51f7dcc2",
   "lastOpenFiles": [
-    "Informazione e codice binario.md",
-    "Il sistema operativo.md",
-    "Data/10.rappresentazioneinformazione.pdf",
     "Modello Von Neumann.md",
+    "Esercitazioni/21-09-2023.md",
+    "Algoritmi.md",
+    "Il sistema operativo.md",
+    "Informazione e codice binario.md",
+    "Data/13.moduloesegno.pdf",
+    "Data/rM drawing 2023-09-21-21.12.34.png",
+    "Data/rM drawing 2023-09-21-19.40.07.png",
+    "Data/rM drawing 2023-09-21-19.40.26.png",
     "Data/Recording 20230919130324.webm",
-    "Data/01.architettura_hardware.pdf",
-    "Data/03.rappresentazioneinformazione.pdf",
-    "Data/02.sistema_operativo.pdf",
     "Data/Pasted image 20230918113255.png",
+    "Data/rM drawing 2023-09-21-14.59.47.png",
+    "Data/rM drawing 2023-09-21-15.36.43.png",
+    "Data/rM drawing 2023-09-21-16.17.06.png",
+    "Data/rM drawing 2023-09-21-18.13.38.png",
+    "Data/rM drawing 2023-09-21-16.16.44.png",
+    "Data/rM drawing 2023-09-21-16.15.52.png",
+    "Data/11.nonnumerica.pdf",
+    "Data/12.numerinaturali.pdf",
+    "Data/03.rappresentazioneinformazione.pdf",
+    "Data/10.rappresentazioneinformazione.pdf",
+    "rM drawing 2023-09-21-15.30.02.png.md",
+    "Esercitazioni",
+    "Data/01.architettura_hardware.pdf",
+    "Data/02.sistema_operativo.pdf",
     "Data",
     "s.md"
   ]
