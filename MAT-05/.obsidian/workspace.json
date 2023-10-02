@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "221583d1ee09922c",
+        "id": "c545f082da5575d8",
         "type": "tabs",
         "children": [
           {
-            "id": "31efa6b1a0257f1d",
+            "id": "ec51fc0ba9ae7c9a",
             "type": "leaf",
             "state": {
               "type": "home-tab-view",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Limiti di successioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Limiti di successioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +120,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Limiti di successioni.md"
+              }
             }
           }
         ]
@@ -140,27 +144,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "31efa6b1a0257f1d",
+  "active": "ec51fc0ba9ae7c9a",
   "lastOpenFiles": [
-    "Esercitazioni/Esercitazione 21-09-23.md",
-    "Data/rM drawing 2023-09-21-10.11.36.png",
-    "Data/rM drawing 2023-09-21-10.09.09.png",
-    "Data/rM drawing 2023-09-21-09.47.28.png",
-    "Data/rM drawing 2023-09-21-09.15.54.png",
-    "Data/rM drawing 2023-09-21-09.06.29.png",
-    "Data/rM drawing 2023-09-21-09.02.03.png",
-    "Data/rM drawing 2023-09-21-08.39.45.png",
-    "Data/rM drawing 2023-09-21-08.24.04.png",
-    "Data/rM drawing 2023-09-21-08.24.49.png",
-    "Data/rM drawing 2023-09-21-08.22.28.png",
-    "Limiti di successioni.md",
     "Modulo.md",
-    "Successioni di numeri razionali.md",
+    "Limiti di successioni.md",
     "Intervallo di numeri razionali.md",
+    "2023-09-27.md",
+    "2023-09-26.md",
+    "Esercitazioni/Esercitazione 28-09-23.md",
+    "Esercitazioni/Esercitazione 26-09-23.md",
+    "Esercitazioni/Esercitazione 21-09-23.md",
+    "Esercitazioni/Esercitazione 19-09-23.md",
+    "Numeri complessi.md",
     "Distanza euclidea.md",
+    "Data/rM drawing 2023-09-28-10.12.45.png",
+    "Data/rM drawing 2023-09-28-09.18.33.png",
+    "Data/rM drawing 2023-09-28-08.45.22.png",
+    "Data/Pasted image 20230927111008.png",
+    "Data/Pasted image 20230927110824.png",
+    "Data/Pasted image 20230927105620.png",
+    "Data/Pasted image 20230927103250.png",
+    "Data/Pasted image 20230927102106.png",
+    "Data/Pasted image 20230927100529.png",
+    "Data/Pasted image 20230927095846.png",
+    "Successioni di numeri razionali.md",
     "Data/Recording 20230919153751.webm",
     "Data",
-    "Esercitazioni/Esercitazione 19-09-23.md",
     "Data/Recording 20230919151959.webm",
     "Esercitazioni",
     "2023-09-13.md",

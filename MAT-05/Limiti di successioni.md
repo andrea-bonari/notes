@@ -11,4 +11,3 @@
 >Per quali valori di $n\geq1$ si ha $|x_n-l|<\epsilon\Leftrightarrow\frac{1}{n}<\epsilon\Leftrightarrow\frac{1}{\epsilon}<n$
 >
 >Posso scegliere $N(\epsilon)\geq1$
-

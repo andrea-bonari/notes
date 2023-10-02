@@ -215,8 +215,8 @@ La parte intera è data dal numero di valori interi rappresentabili, mentre la p
 
 La distanza tra valori è data da $\frac{1}{k^2}$, dove $k$ è il numero di bit dati alla parte frazionaria.
 
-
-In questa notazione l'errore assoluto $e_A$ è costante, mentre l'errore relativo $e_R$ decresce al crescere che si vuole rappresentare.
+>[!info]
+>In questa notazione l'errore assoluto $e_A$ è costante, mentre l'errore relativo $e_R$ decresce al crescere che si vuole rappresentare.
 
 Per convertire in base $n$ si usa la seguente formula:$$\sum\limits_{i=-k}^{n-1}c_{1}\cdot b^i$$ dove:
 $k$ è il numero di bit dati alla parte frazionaria
@@ -251,21 +251,34 @@ Per convertire in base 2 un numero in base $n$, convertiamo la parte intera in b
 ##### Notazione a virgola mobile
 
 La notazione a virgola mobile ci permettere di creare un compromesso tra la dimensione dei valori e la loro precisione permettendo di spostare la virgola. Per ottenere questo effetto si utilizza la notazione scientifica:$$\text{valore}=\text{segno}\cdot\text{mantissa}\cdot\text{base}^\text{esponente}$$
-Si stabilisce quante cifre dare alla mantissa, al segno e all'esponente.
+Abbiamo quindi:$$\underbracket{0}_\text{segno}\underbracket{00000000}_{\text{esponente}-e}\underbracket{00000000000000000000000}_\text{mantissa}$$
+Il bit del segno si comporta come in [[#Notazione Modulo Segno|notazione modulo segno]], mentre l'esponente è shiftato di metà del suo valore meno uno ($e=2^{\text{bit esponente}-1}-1$).
 
-In questa notazione l'errore relativo $e_R$ è costante mentre l'errore assoluto $e_A$ cresce al crescere del valore che si vuole rappresentare.
+In  notazione scientifica un numero è detto normalizzato quando: $1\leq\text{mantissa}<\text{base}$, però in base binaria abbiamo solo una cifra che non è zero, quindi dalla mantissa omettiamo la parte intera.
 
-Questa notazione è detta in forma normalizzata quando la mantissa è: $1\leq\text{mantissa}<\text{base}$
+>[!info]
+>In questa notazione l'errore relativo $e_R$ è costante mentre l'errore assoluto $e_A$ cresce al crescere del valore che si vuole rappresentare.
 
-Secondo lo standard IEEE 754 esiste la rappresentazione a virgola mobile a singola precisione (float) e a doppia precisione (double).
+Per stabilire il numero di cifre dedicate a ogni parte utilizziamo lo standard IEEE 754, secondo il quale esiste la rappresentazione a virgola mobile a singola precisione (float) e a doppia precisione (double).
 
-- float:
-	- $s$: 1 bit
-	- $esp+e$: 8 bit
-	- $M$: 23 bit
-- double
-	- $s$: 1bit
-	- $esp+e$: 11 bit
-	- $M$: 52 bit
+>[!info]
+>Lo standard float ha a disposizione:
+>$s$: 1 bit
+>$esp + e$: 8 bit ($e = 127$ => $esp+e\in[-127,+128]$)
+>$M$: 23 bit
+>
+>Mentre lo standard double ha a disposizione:
+>$s$: 1 bit
+>$esp + e$: 8 bit ($e=1023$ => $esp+e\in[-1023,+1024]$)
+>$M$: 52 bit
 
-Per fare operazioni con virgola mobile 
+Per rappresentare tali valori in modo coinciso solitamente si usa la base 16:
+
+>[!example]
+>$00111101100100000000000000000000_{2IEEE754}=3D900000_{16IEEE745}=0\text{x}3D900000_{IEEE745}$
+
+Quando $\text{esponente}+e$ è impostata tutta a $1$ significa che si vogliono esprimere dei valori speciali:
+- $M=00..00$: Dal bit del segno intendiamo $+\infty$ o $-\infty$
+- $M\neq00..00$: Non definito ($NaN$)
+
+Questi valori esistono per rappresentare il risultato di un operazione che ha dato come risultato un valore non rappresentabile, cioè al di fuori dal campo di rappresentabilità o dato da un operazione senza senso ($\frac{0}{0}\quad\infty-\infty\quad0\cdot\infty$).

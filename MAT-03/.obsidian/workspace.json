@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ca36aa5ef2183373",
+        "id": "14feabcdf96485bb",
         "type": "tabs",
         "children": [
           {
-            "id": "a9fde4930f1f6330",
+            "id": "7bdfd7d3eb2c3f44",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemi lineari.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "home-tab-view",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi lineari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi lineari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sistemi lineari.md"
-              }
+              "state": {}
             }
           },
           {
@@ -158,12 +150,12 @@
       "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "a9fde4930f1f6330",
+  "active": "7bdfd7d3eb2c3f44",
   "lastOpenFiles": [
     "Matrici.md",
+    "Vettori fisici.md",
     "Vettori.md",
     "Sistemi lineari.md",
-    "Vettori fisici.md",
     "Data/prodotto-tra-matrici.png",
     "Data/Pasted image 20230925140100.png",
     "Data/Pasted image 20230925134936.png",

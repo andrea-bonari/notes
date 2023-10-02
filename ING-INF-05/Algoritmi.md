@@ -2,4 +2,4 @@
 >Il numero di passi deve essere finito. Deve essere deterministico. Non deve essere ambiguo.
 
 >[!Danger]
->La creazione di algoritmi e la programmazione in C non sarà inclusa in questi appunti.
+>La creazione di algoritmi e la programmazione in C non sarà inclusa in questi appunti. Saranno incluse soltanto le esercitazioni in C nella cartella Esercitazioni.

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "bd0647a044ef4380",
+        "id": "61782db38bd64f4c",
         "type": "tabs",
         "children": [
           {
-            "id": "888dc30e51f7dcc2",
+            "id": "51af9278a76f3cb6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Informazione e codice binario.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "home-tab-view",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Informazione e codice binario.md",
+                "file": "Il sistema operativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Informazione e codice binario.md",
+                "file": "Il sistema operativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Informazione e codice binario.md"
+                "file": "Il sistema operativo.md"
               }
             }
           }
@@ -148,13 +144,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "888dc30e51f7dcc2",
+  "active": "51af9278a76f3cb6",
   "lastOpenFiles": [
     "Modello Von Neumann.md",
-    "Esercitazioni/21-09-2023.md",
-    "Algoritmi.md",
-    "Il sistema operativo.md",
     "Informazione e codice binario.md",
+    "Il sistema operativo.md",
+    "Algoritmi.md",
+    "Esercitazioni/21-09-2023.md",
     "Data/13.moduloesegno.pdf",
     "Data/rM drawing 2023-09-21-21.12.34.png",
     "Data/rM drawing 2023-09-21-19.40.07.png",
