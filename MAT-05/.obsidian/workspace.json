@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "c545f082da5575d8",
+        "id": "988c6b239edf3959",
         "type": "tabs",
         "children": [
           {
-            "id": "ec51fc0ba9ae7c9a",
+            "id": "b1e60227d1fbdb50",
             "type": "leaf",
             "state": {
-              "type": "home-tab-view",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Numeri complessi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "183acc66e4665f1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Numeri complessi.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Limiti di successioni.md",
+                "file": "Numeri complessi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Limiti di successioni.md",
+                "file": "Numeri complessi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Limiti di successioni.md"
+                "file": "Numeri complessi.md"
               }
             }
           }
@@ -144,29 +161,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ec51fc0ba9ae7c9a",
+  "active": "183acc66e4665f1c",
   "lastOpenFiles": [
+    "Data/rM drawing 2023-10-04-10.02.46.png",
+    "Teoria fondamentale dell algebra.md",
+    "Numeri complessi.md",
+    "Data/rM drawing 2023-10-04-09.02.07.png",
+    "Distanza euclidea.md",
     "Modulo.md",
     "Limiti di successioni.md",
     "Intervallo di numeri razionali.md",
-    "2023-09-27.md",
-    "2023-09-26.md",
+    "Esercitazioni/Esercitazione 03-10-23.md",
     "Esercitazioni/Esercitazione 28-09-23.md",
+    "2023-09-27.md",
+    "Data/rM drawing 2023-10-03-16.52.06.png",
+    "Data/rM drawing 2023-10-03-16.42.04.png",
+    "Data/rM drawing 2023-10-03-16.09.05.png",
+    "Data/rM drawing 2023-10-03-15.04.34.png",
+    "Data/rM drawing 2023-10-03-14.25.22.png",
+    "2023-09-26.md",
     "Esercitazioni/Esercitazione 26-09-23.md",
     "Esercitazioni/Esercitazione 21-09-23.md",
     "Esercitazioni/Esercitazione 19-09-23.md",
-    "Numeri complessi.md",
-    "Distanza euclidea.md",
     "Data/rM drawing 2023-09-28-10.12.45.png",
     "Data/rM drawing 2023-09-28-09.18.33.png",
     "Data/rM drawing 2023-09-28-08.45.22.png",
     "Data/Pasted image 20230927111008.png",
-    "Data/Pasted image 20230927110824.png",
-    "Data/Pasted image 20230927105620.png",
-    "Data/Pasted image 20230927103250.png",
-    "Data/Pasted image 20230927102106.png",
-    "Data/Pasted image 20230927100529.png",
-    "Data/Pasted image 20230927095846.png",
     "Successioni di numeri razionali.md",
     "Data/Recording 20230919153751.webm",
     "Data",

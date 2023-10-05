@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Il sistema operativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Il sistema operativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Il sistema operativo.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -144,18 +140,28 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "51af9278a76f3cb6",
+  "active": "532fb42e3a52481d",
   "lastOpenFiles": [
+    "Esercizi/03-10-2023/a.out",
+    "Esercizi/03-10-2023/20.c",
+    "Esercizi/03-10-2023/19.c",
+    "Esercizi/03-10-2023/18.c",
+    "Esercizi/03-10-2023/17.c",
+    "Esercizi/03-10-2023/16.c",
+    "Esercizi/03-10-2023/15.c",
+    "Esercizi/03-10-2023/14.c",
+    "Esercizi/03-10-2023/13.c",
+    "Esercizi/03-10-2023/12.c",
+    "Esercizi/03-10-2023/11.c",
+    "Esercizi/03-10-2023.md",
     "Modello Von Neumann.md",
     "Informazione e codice binario.md",
     "Il sistema operativo.md",
     "Algoritmi.md",
     "Esercitazioni/21-09-2023.md",
-    "Data/13.moduloesegno.pdf",
     "Data/rM drawing 2023-09-21-21.12.34.png",
     "Data/rM drawing 2023-09-21-19.40.07.png",
     "Data/rM drawing 2023-09-21-19.40.26.png",
-    "Data/Recording 20230919130324.webm",
     "Data/Pasted image 20230918113255.png",
     "Data/rM drawing 2023-09-21-14.59.47.png",
     "Data/rM drawing 2023-09-21-15.36.43.png",
@@ -163,15 +169,7 @@
     "Data/rM drawing 2023-09-21-18.13.38.png",
     "Data/rM drawing 2023-09-21-16.16.44.png",
     "Data/rM drawing 2023-09-21-16.15.52.png",
-    "Data/11.nonnumerica.pdf",
-    "Data/12.numerinaturali.pdf",
-    "Data/03.rappresentazioneinformazione.pdf",
-    "Data/10.rappresentazioneinformazione.pdf",
     "rM drawing 2023-09-21-15.30.02.png.md",
-    "Esercitazioni",
-    "Data/01.architettura_hardware.pdf",
-    "Data/02.sistema_operativo.pdf",
-    "Data",
     "s.md"
   ]
 }

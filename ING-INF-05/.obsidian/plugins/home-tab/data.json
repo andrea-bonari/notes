@@ -22,28 +22,7 @@
   "showShortcuts": true,
   "markdownOnly": true,
   "unresolvedLinks": false,
-  "recentFilesStore": [
-    {
-      "filepath": "Il sistema operativo.md",
-      "timestamp": 1695722047555
-    },
-    {
-      "filepath": "Modello Von Neumann.md",
-      "timestamp": 1695722046828
-    },
-    {
-      "filepath": "Informazione e codice binario.md",
-      "timestamp": 1695718806827
-    },
-    {
-      "filepath": "Algoritmi.md",
-      "timestamp": 1695717963671
-    },
-    {
-      "filepath": "Esercitazioni/21-09-2023.md",
-      "timestamp": 1695717795283
-    }
-  ],
+  "recentFilesStore": [],
   "starredFileStore": [],
   "searchDelay": 0,
   "replaceNewTabs": true,

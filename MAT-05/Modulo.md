@@ -1,9 +1,8 @@
-Il modulo è una funzione il cui scopo è rendere l'argomento uguale al suo valore assoluto
+Il modulo è una funzione il cui scopo è rendere l'argomento uguale al suo valore assoluto.
 
 $$f: q \rightarrow q\qquad f(q)=\begin{cases}q & q\geq0 \\-q & q<0\end{cases}$$
 >[!example]
 >$$f(1)=1\quad f(-1)=1\quad f(0) = 0$$
-
 
 ```functionplot
 ---
